@@ -29,8 +29,11 @@ public class SentinelWeaponHelper extends SentinelHelperObject {
 
     static {
         if (SentinelVersionCompat.v1_21) {
-            LINGERING_POTION = EntityType.LINGERING_POTION;
-            SPLASH_POTION = EntityType.SPLASH_POTION;
+            // TODO: Update this to the following for 1.21.11
+            // LINGERING_POTION = EntityType.LINGERING_POTION;
+            // SPLASH_POTION = EntityType.SPLASH_POTION;
+            LINGERING_POTION = EntityType.POTION;
+            SPLASH_POTION = EntityType.POTION;
             TIPPED_ARROW = EntityType.ARROW;
         }
         else if (SentinelVersionCompat.v1_14) {
