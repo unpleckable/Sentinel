@@ -71,13 +71,13 @@ public class SentinelPlugin extends JavaPlugin {
      * Cleans and returns the current Sentinel NPC list.
      */
     public ArrayList<SentinelTrait> cleanCurrentList() {
-        ArrayList<SentinelTrait> npcs = SentinelPlugin.instance.currentSentinelNPCs;
-        for (int i = 0; i < npcs.size(); i++) {
-            if (!npcs.get(i).validateOnList()) {
+        ArrayList<SentinelTrait> live = SentinelPlugin.instance.currentSentinelNPCs;
+        for (int i = 0; i < live.size(); i++) {
+            if (!live.get(i).validateOnList()) {
                 i--;
             }
         }
-        return npcs;
+        return new ArrayList<>(live);
     }
 
     /**
