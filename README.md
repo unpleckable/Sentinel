@@ -1,4 +1,4 @@
-Sentinel NPCs: Combat NPCs for Spigot!
+Sentinel NPCs: Combat NPCs for Spigot!mk
 --------------------------------------
 
 ### Table Of Contents
